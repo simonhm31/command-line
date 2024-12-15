@@ -6,7 +6,7 @@
   font-size: larger;
 }
 
-.subtitle {
+.section {
   background-color: lightgoldenrodyellow;
   border: 1px solid black;
   border-radius: 5px;
@@ -15,7 +15,7 @@
   margin-top: 40px;
 }
 
-.subsubtitle {
+.subsection {
   width: 75%;
   margin: auto;
   background-color: seashell;
@@ -36,7 +36,7 @@
   padding-right: 5px;
 }
 
-#subtitle-heading {
+#section-heading {
   width: fit-content;
   margin: auto;
   background-color: white;
@@ -47,5 +47,3 @@
   padding-right: 9px;
   margin-top: 8px;
 }
-
-
