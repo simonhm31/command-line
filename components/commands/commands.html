@@ -1,177 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Title</title>
-    <link rel="icon" href="../../favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="../../node_modules/bootstrap/dist/css/bootstrap.css"
-    />
-    <link rel="stylesheet" href="../../styles.css" />
-    <link rel="stylesheet" href="./commands.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <a class="navbar-links" href="../../index.html">
-        <h2>Home</h2>
-      </a>
-      <a class="navbar-links" href="./commands.html">
-        <h3>Commands</h3>
-      </a>
-      <a class="navbar-links" href="../git/git.html">
-        <h3>Git</h3>
-      </a>
-    </nav>
 
-    <div class="notes-section">
-      <div class="section">
-        <h2>What is the command line?</h2>
-        <div class="text">
-          <p>The command line, or command line interface (CLI) is a thing. All operating systems have 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Title</title>
+  <link rel="icon" href="../../favicon.ico" />
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="./commands.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <a class="navbar-links" href="../../index.html">
+      <h2>Home</h2>
+    </a>
+    <a class="navbar-links" href="./commands.html">
+      <h3>Commands</h3>
+    </a>
+    <a class="navbar-links" href="../git/git.html">
+      <h3>Git</h3>
+    </a>
+  </nav>
+
+  <div class="notes-section">
+    <div class="section">
+      <h2>What is the command line?</h2>
+      <div class="text">
+        <ul>
+          <li>
+            The command line, or command line interface (CLI) is a thing. All operating systems have
             some sort of command line. On MacOS and Linux the CLI app is called the <code>Terminal</code>. WindowsOS
-            has two CLI apps - the <code>Command Prompt</code> and <code>Windows PowerShell</code>. The command prompt is used for more simple tasks whereas the powershell is used for more complicated tasks. 
-          </p>
-        </div>
-      </div>
-      <div class="section">
-        <h2>Basic Commands</h2>
-        <p>*Mostly MacOS and Linux OS have same commands* *Mostly the Command Prompt and PowerShell/PowerShell ISE have same commands*</p>
-        <div class="text">
-            <table>
-              <thead>
-                <tr>
-                  <th>Terminal (MacOS) / Terminal (Linux)</th>
-                  <th>Command Prompt (WindowsOS)</th>
-                  <th>Purpose</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><code>cd</code></td>
-                  <td><code>cd</code></td>
-                  <td>change directory</td>
-                </tr>
-                <tr>
-                  <td><code>pwd</code></td>
-                  <td><code>pwd</code></td>
-                  <td>print working directory</td>
-                </tr>
-                <tr>
-                  <td><code>ls</code></td>
-                  <td><code>dir</code></td>
-                  <td>list contents of working directory</td>
-                </tr>
-                <tr>
-                  <td><code>cd dir1/dir2</code></td>
-                  <td><code>cd dir1/dir2</code></td>
-                  <td>change more than one directory level</td>
-                </tr>
-                <tr>
-                  <td><code>cd ..</code></td>
-                  <td><code>cd ..</code></td>
-                  <td>step up one directory</td>
-                </tr>
-                <tr>
-                  <td><code>cd</code></td>
-                  <td><code>cd\</code></td>
-                  <td>go back to root directory</td>
-                </tr>
-                <tr>
-                  <td><code>mkdir [name]</code></td>
-                  <td><code>mkdir [name]</code></td>
-                  <td>create directory</td>
-                </tr>
-                <tr>
-                  <td><code>rmdir [name]</code></td>
-                  <td><code>rmdir [name]</code></td>
-                  <td>remove empty directory</td>
-                </tr>
-                <tr>
-                  <td><code>rm -rf [name]</code></td>
-                  <td><code>rmdir [name] /s</code></td>
-                  <td>delete directory and its contents</td>
-                </tr>
-                <tr>
-                  <td><code>touch [name.type]</code><p>or</p><code>echo > [name.type]</code></td>
-                  <td><code>echo > [name.type]</code></td>
-                  <td>create empty file</td>
-                </tr>
-                <tr>
-                  <td><code>echo [text] > file.type</code></td>
-                  <td><code>echo [text] > file.type</code></td>
-                  <td>create non-empty file</td>
-                </tr>
-                <tr>
-                  <td><code>open [name.type]</code></td>
-                  <td><code>[name.type]</code></td>
-                  <td>open file in default application</td>
-                </tr>
-                <tr>
-                  <td><code>mv [oldFileName] [newFileName]</code></td>
-                  <td><code>ren [oldFileName] [newFileName]</code></td>
-                  <td>rename file</td>
-                </tr>
-                <tr>
-                  <td><code>rm [name.type]</code></td>
-                  <td><code>del [name.type]</code></td>
-                  <td>delete file</td>
-                </tr>
-                <tr>
-                  <td><code>mv [dir] [path to destination directory]</code></td>
-                  <td><code>move [dir] [path to destination directory]</code></td>
-                  <td>Move directory</td>
-                </tr>
-                <tr>
-                  <td><code>cp -r [dir] [path to destination directory]</code></td>
-                  <td><code>robocopy [dir] [path to destination directory]</code></td>
-                  <td>Copy and move copied directory</td>
-                </tr>
-                <tr>
-                  <td><code><i>press up arrow key</i></code></td>
-                  <td><code><i>press up arrow key</i></code></td>
-                  <td>Repeat previous command</td>
-                </tr>
-              </tbody>
-            </table>
-        </div>
-      </div>
+            has three CLI apps - the <code>Command Prompt</code>, <code>Windows PowerShell</code>, and
+            <code>Windows PowerShell ISE (Integrated Scripting Environment)</code>.
+          </li>
+          <li>
+            The main difference is he command
+            prompt is the oldest of the three and used for more simple tasks whereas the powershells are used for more
+            complicated tasks.
+          </li>
+        </ul>
 
-      <div class="section">
-        <h2><code>ls/dir</code> Command</h2>
-
-        <div class="text">
-          <p>
-            As we saw in this previous section, the <code>ls/dir</code> 
-            command lists the contents of the working directory. There are 
-          </p>
-        </div>
       </div>
+    </div>
+    <div class="section">
+      <h2>Basic Commands</h2>
+      <p>*Mostly MacOS and Linux OS have same commands* *Mostly the Command Prompt and PowerShell/PowerShell ISE have
+        same commands*</p>
+      <div class="text">
+        <table>
+          <thead>
+            <tr>
+              <th>Terminal (MacOS) / Terminal (Linux)</th>
+              <th>Command Prompt (WindowsOS)</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>cd</code></td>
+              <td><code>cd</code></td>
+              <td>change directory</td>
+            </tr>
+            <tr>
+              <td><code>pwd</code></td>
+              <td><code>pwd</code></td>
+              <td>print working directory</td>
+            </tr>
+            <tr>
+              <td><code>ls</code></td>
+              <td><code>dir</code></td>
+              <td>list contents of working directory</td>
+            </tr>
+            <tr>
+              <td><code>cd dir1/dir2</code></td>
+              <td><code>cd dir1/dir2</code></td>
+              <td>change more than one directory level</td>
+            </tr>
+            <tr>
+              <td><code>cd ..</code></td>
+              <td><code>cd ..</code></td>
+              <td>step up one directory</td>
+            </tr>
+            <tr>
+              <td><code>cd</code></td>
+              <td><code>cd\</code></td>
+              <td>go back to root directory</td>
+            </tr>
+            <tr>
+              <td><code>mkdir [name]</code></td>
+              <td><code>mkdir [name]</code></td>
+              <td>create directory</td>
+            </tr>
+            <tr>
+              <td><code>rmdir [name]</code></td>
+              <td><code>rmdir [name]</code></td>
+              <td>remove empty directory</td>
+            </tr>
+            <tr>
+              <td><code>rm -rf [name]</code></td>
+              <td><code>rmdir [name] /s</code></td>
+              <td>delete directory and its contents</td>
+            </tr>
+            <tr>
+              <td><code>touch [name.type]</code>
+                <p>or</p><code>echo > [name.type]</code>
+              </td>
+              <td><code>echo > [name.type]</code></td>
+              <td>create empty file</td>
+            </tr>
+            <tr>
+              <td><code>echo [text] > file.type</code></td>
+              <td><code>echo [text] > file.type</code></td>
+              <td>create non-empty file</td>
+            </tr>
+            <tr>
+              <td><code>open [name.type]</code></td>
+              <td><code>[name.type]</code></td>
+              <td>open file in default application</td>
+            </tr>
+            <tr>
+              <td><code>mv [oldFileName] [newFileName]</code></td>
+              <td><code>ren [oldFileName] [newFileName]</code></td>
+              <td>rename file</td>
+            </tr>
+            <tr>
+              <td><code>rm [name.type]</code></td>
+              <td><code>del [name.type]</code></td>
+              <td>delete file</td>
+            </tr>
+            <tr>
+              <td><code>mv [dir] [path to destination directory]</code></td>
+              <td><code>move [dir] [path to destination directory]</code></td>
+              <td>Move directory</td>
+            </tr>
+            <tr>
+              <td><code>cp -r [dir] [path to destination directory]</code></td>
+              <td><code>robocopy [dir] [path to destination directory]</code></td>
+              <td>Copy and move copied directory</td>
+            </tr>
+            <tr>
+              <td><code><i>press up arrow key</i></code></td>
+              <td><code><i>press up arrow key</i></code></td>
+              <td>Repeat previous command</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-      <div class="section">
-        <h2>SSH (Secure Shell)</h2>
-        <div class="text">
-          <p>The first step to logging in with SSH is knowing the public IP 
-            address of the target device. There are two main types of IP addresses:
+    <div class="section">
+      <h2><code>ls/dir</code> Command</h2>
+
+      <div class="text">
+        <p>
+          As we saw in this previous section, the <code>ls/dir</code>
+          command lists the contents of the working directory. There are
+        </p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>SSH (Secure Shell)</h2>
+      <div class="text">
+        <p>The first step to logging in with SSH is knowing the public IP
+          address of the target device. There are two main types of IP addresses:
           <br>
+        <ul>
+          <li><strong>Public IP Addresses:</strong></li>
           <ul>
-            <li><strong>Public IP Addresses:</strong></li>
-            <ul>
-              <li>Visible to anyone on the Internet</li>
-              <li>Used to identify your device when you are connected to the Internet </li>
-              <li>Can be dynamic or static</li>
-            </ul>
-            <li><strong>Private IP Addresses:</strong></li>
-            <ul>
-              <li>Not visible to anyone on the Internet</li>
-              <li>Used to identify a machine on a local device</li>
-              <li>Can be dynamic or static</li>
-            </ul>
+            <li>Visible to anyone on the Internet</li>
+            <li>Used to identify your device when you are connected to the Internet </li>
+            <li>Can be dynamic or static</li>
           </ul>
-          </p>
-          <p></p>
-         <table>
+          <li><strong>Private IP Addresses:</strong></li>
+          <ul>
+            <li>Not visible to anyone on the Internet</li>
+            <li>Used to identify a machine on a local device</li>
+            <li>Can be dynamic or static</li>
+          </ul>
+        </ul>
+        </p>
+        <p></p>
+        <table>
           <tbody>
             <thead>
               <tr>
@@ -186,15 +198,16 @@
               <td>find public IP address</td>
             </tr>
           </tbody>
-         </table>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2>Text Editor Within CLI</h2>
+        </table>
       </div>
     </div>
-    <script src="./index.js"></script>
 
-  </body>
+    <div class="section">
+      <h2>Text Editor Within CLI</h2>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+
+</body>
+
 </html>
