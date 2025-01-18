@@ -1,0 +1,13 @@
+img {
+  height: 80%;
+  width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 2px dashed black;
+}
+
+.static-website-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -93,3 +93,35 @@ th {
   background-color: lightgrey;
   border: 1px solid black;
 }
+
+.subtitle {
+  background-color: lightgoldenrodyellow;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.subsubtitle {
+  width: 75%;
+  margin: auto;
+  background-color: seashell;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-shadow: initial;
+}
+
+#subtitle-heading {
+  width: fit-content;
+  margin: auto;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 3px 3px black;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin-top: 8px;
+}
