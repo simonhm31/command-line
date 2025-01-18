@@ -11,26 +11,6 @@ body{
   font-size: larger;
 }
 
-.section {
-  background-color: lightgoldenrodyellow;
-  border: 1px solid black;
-  border-radius: 5px;
-  box-shadow: 0 0 10px black;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-
-.subsection {
-  width: 75%;
-  margin: auto;
-  background-color: seashell;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  border: 1px solid black;
-  border-radius: 5px;
-  text-shadow: initial;
-}
-
 .text {
   width: 80%;
   margin: auto;
@@ -94,7 +74,7 @@ th {
   border: 1px solid black;
 }
 
-.subtitle {
+.section {
   background-color: lightgoldenrodyellow;
   border: 1px solid black;
   border-radius: 5px;
@@ -103,7 +83,7 @@ th {
   margin-top: 40px;
 }
 
-.subsubtitle {
+.subsection {
   width: 75%;
   margin: auto;
   background-color: seashell;
@@ -114,7 +94,7 @@ th {
   text-shadow: initial;
 }
 
-#subtitle-heading {
+#section-heading {
   width: fit-content;
   margin: auto;
   background-color: white;
