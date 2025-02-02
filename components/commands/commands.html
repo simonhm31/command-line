@@ -170,11 +170,9 @@
     </div>
 
     <div class="section">
-      <h2>SSH (Secure Shell)</h2>
+      <h2>IP addresses and MAC addresses</h2>
       <div class="text">
-        <p>The first step to logging in with SSH is knowing the public IP
-          address of the target device. There are two main types of IP addresses:
-          <br>
+        <p><u> There are two main types of IP addresses:</u></p>
         <ul>
           <li><strong>Private IP Addresses:</strong></li>
           <li>Not visible to anyone on the Internet</li>
@@ -182,7 +180,7 @@
           <li>assigned by router</li>
           <li>Addresses can be reused on different networks</li>
           <li>free</li>
-        </ul>
+          <li>Can be found from the command line when connected to a router</li>
         </ul>
         </p>
         <table>
@@ -214,10 +212,12 @@
             <li>assigned by your ISP </li>
             <li>Addresses are unique and cannot be reused</li>
             <li>not free, have to pay an ISP for them</li>
+            <li>Can be found when connected to the internet</li>
+            <li>different devices on same network have same public IP</li>
           </ul>
 
-          <p><i>You can't find public IP address directly from command line.</i> This is because public IP addresses are assigned by ISP.</p>
-      </div>
+          <p><i>You can't find public IP address without being connected to the internet.</i> This is because public IP addresses are assigned by ISP. However, once connected to the internet you can find your public IP from the command line.</p>
+      </div>.
 
       <div class="text">
         <h3>Setting up SSH on WindowsOS:</h3>
