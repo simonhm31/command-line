@@ -160,13 +160,14 @@
 
     <div class="section">
       <h2>Network configuration commands</h2>
-      <div class="text">
+      <div class="text" style="width: 90%;">
         <table>
           <thead>
             <tr>
               <th>Terminal (MacOS) / Terminal (Linux)</th>
               <th>Command Prompt (WindowsOS)</th>
               <th>Purpose</th>
+              <th>Necessary Definitions</th>
             </tr>
           </thead>
           <tbody>
@@ -174,11 +175,17 @@
               <td>ifconfig</td>
               <td>ipconfig</td>
               <td>Display info about the network configuration. IP address, subnet mask, default gateway</td>
+              <td>
+                <code>Subnet mask:</code> a 32-bit number used in network addressing to separate the network portion of an IP address from the host portion
+                <hr>
+                <code>Default gateway:</code> A default gateway is the exit point for packets that are destined for outside the network. It's also the path used when a device doesn't know where to send a packet. Usually this is the same as the IP address of the router
+              </td>
             </tr>
             <tr>
               <td>hostname</td>
               <td>hostname</td>
               <td>display computer hostname</td>
+              <td><code>hostname:</code> a </td>
             </tr>
           </tbody>
         </table>
