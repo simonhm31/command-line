@@ -176,9 +176,25 @@
               <td>ipconfig</td>
               <td>Display info about the network configuration. IP address, subnet mask, default gateway</td>
               <td>
-                <code>Subnet mask:</code> a 32-bit number used in network addressing to separate the network portion of an IP address from the host portion
+                <code>Subnet mask:</code> a 32-bit number used in network addressing to separate the network portion of
+                an IP address from the host portion
                 <hr>
-                <code>Default gateway:</code> A default gateway is the exit point for packets that are destined for outside the network. It's also the path used when a device doesn't know where to send a packet. Usually this is the same as the IP address of the router
+                <code>Default gateway:</code> A default gateway is the exit point for packets that are destined for
+                outside the network. It's also the path used when a device doesn't know where to send a packet. As far
+                as I know this is always the same as the IP address of the router
+              </td>
+            </tr>
+            <tr>
+              <td><code>ping [IP address / hostname]</code></td>
+              <td><code>ping [IP address / hostname]</code></td>
+              <td>Tests if connection possible between your computer and other IP address/hostname. Measures round trip
+                time in milliseconds. Measures TTL value.</td>
+              <td>
+                <code>TTL: time to live</code>. Every packet has a TTL value. Each time a router forwards a packet,
+                the TTL is decremented by one. If the TTL reaches 0, the router drops the packet
+                <hr>
+                Within the ping command, the TTL shows the number of hops the packet has taken. For example, f the initial TTL is 64, and the ping reply shows a TTL of 55, it means the packet traveled through 9 routers before reaching the destination and returning
+              
               </td>
             </tr>
             <tr>
@@ -270,12 +286,12 @@
           <li><span style="font-size: 25px;">Router:</span></li>
           <li>Connect to devices on network</li>
           <li>You can tell if device is router by </li>
-          
+
           <table>
             <tbody>
               <thead>
                 <tr>
-                  <th colspan="3">Find router IP address   </th>
+                  <th colspan="3">Find router IP address </th>
                 </tr>
               </thead>
               <thead>
@@ -296,7 +312,7 @@
         </ul>
         <ul>
           <li><span style="font-size: 25px;">Modem:</span></li>
-          
+
         </ul>
         <ul>
           <li><span style="font-size: 25px;">Gateway:</span></li>
