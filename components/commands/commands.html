@@ -187,13 +187,17 @@
             <tr>
               <td><code>ping [IP address/hostname]</code></td>
               <td><code>ping [IP address/hostname]</code></td>
-              <td>Tests if connection possible between your computer and other IP address/hostname. Measures round trip
-                time in milliseconds. Measures TTL value.</td>
+              <td>Tests if connection possible between your computer and other IP address/hostname. Returns round trip
+                time in milliseconds and TTL value.</td>
               <td>
                 <code>TTL: time to live</code>. Every packet has a TTL value. Each time a router forwards a packet,
-                the TTL is decremented by one. If the TTL reaches 0, the router drops the packet
+                the TTL is decremented by one. If the TTL reaches 0, the router drops the packet. 
                 <hr>
-                Within the ping command, the TTL shows the number of hops the packet has taken. For example, f the initial TTL is 64, and the ping reply shows a TTL of 55, it means the packet traveled through 9 routers before reaching the destination and returning
+                WindowsOS typically uses 128 as TTL value, MacOS and Linux typically use 64
+                <hr>
+                Within the ping command, the TTL shows the number of hops the packet has taken. For example, if the initial TTL is 64, and the ping reply shows a TTL of 55, it means the packet traveled through 9 routers before reaching the destination and returning
+                <hr>
+                The purpose of TTL is to prevent packets from circulating forever
               
               </td>
             </tr>
